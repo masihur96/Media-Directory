@@ -20,11 +20,12 @@ class _IndexPageState extends State<IndexPage> {
 
         backgroundColor: Color(0xffedf7fd),
         body: Row(
-
-          children: <Widget>[
+          
+          mainAxisAlignment: MainAxisAlignment.center
+          ,children: <Widget>[
             Container(
-              height: MediaQuery.of(context).size.height,
-              width: MediaQuery.of(context).size.width/4,
+              height:size.height,
+              width: size.width*.25,
               color: Color(0xffedf7fd),
 
               child: SingleChildScrollView(
@@ -32,75 +33,75 @@ class _IndexPageState extends State<IndexPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    SizedBox(height: 20,),
+                    SizedBox(height: size.height*.02,),
                     Container(
                       height: size.height/9,
                       width: size.width/5,
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.white,width: 2),
+                        border: Border.all(color: Colors.white,width: size.height*.01),
 
                       ),
                       child: Image.asset("images/channelilogo.png",fit: BoxFit.fill,),
 
 
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(height: size.height*.01,),
                     CircleAvatar(
-                      radius: 55,
+                      radius: size.height*.07,
                       backgroundColor: Colors.white,
                       child: CircleAvatar(
-                        radius: 50,
+                        radius: size.height*.06,
 
                         child: Image.asset("images/atnbanglalogo.png"),
 
                       ),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(height: size.height*.01,),
                     Container(
                       height: size.height/8,
                       width: size.width/5,
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.white,width: 2),
+                        border: Border.all(color: Colors.white,width: size.height*.01),
 
                       ),
                       child: Image.asset("images/ntvlogo.png",fit: BoxFit.fill,),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(height: size.height*.01,),
                     CircleAvatar(
-                      radius: 55,
+                      radius: size.height*.07,
                       backgroundColor: Colors.white,
                       child: CircleAvatar(
-                        radius: 50,
+                        radius: size.height*.06,
 
                         child: Image.asset("images/atnbanglalogo.png"),
                       ),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(height: size.height*.01,),
                     Container(
                       height: size.height/8,
                       width: size.width/5,
                       decoration: BoxDecoration(
-                      border: Border.all(color: Colors.white,width: 2),
+                      border: Border.all(color: Colors.white,width: size.height*.01),
 
                       ),
 
                       child: Image.asset("images/channelilogo.png",fit: BoxFit.fill,),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(height: size.height*.01,),
                     CircleAvatar(
-                      radius: 55,
+                      radius:size.height*.07,
                       backgroundColor: Colors.white,
                       child: CircleAvatar(
-                        radius: 50,
+                        radius: size.height*.06,
                         child: Image.asset("images/atnbanglalogo.png"),
                       ),
                     ),
-                    SizedBox(height: 10,),
+                    SizedBox(height: size.height*.01,),
                     Container(
                       height: size.height/8,
                       width: size.width/5,
                       decoration: BoxDecoration(
-                        border: Border.all(color: Colors.white,width: 2),
+                        border: Border.all(color: Colors.white,width: size.height*.01),
 
                       ),
                       child: Image.asset("images/ntvlogo.png",fit: BoxFit.fill,),
@@ -113,11 +114,11 @@ class _IndexPageState extends State<IndexPage> {
 
 
             Padding(
-              padding: const EdgeInsets.only(top:10.0,),
+              padding: const EdgeInsets.all(8.0),
               child: Container(
 
                 height: size.height,
-                width: size.width*.73,
+                width: size.width*.70,
 
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -133,17 +134,17 @@ class _IndexPageState extends State<IndexPage> {
 
 
                 ),
-                child: SingleChildScrollView(
-                  scrollDirection: Axis.vertical,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: <Widget>[
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
 
-                      CarouselSlider(
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: CarouselSlider(
                           items: [
                             Container(
-                              margin: EdgeInsets.all(6.0),
+                              padding: EdgeInsets.all(6.0),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8.0),
                                 image: DecorationImage(
@@ -154,7 +155,7 @@ class _IndexPageState extends State<IndexPage> {
                             ),
 
                             Container(
-                              margin: EdgeInsets.all(6.0),
+                              padding: EdgeInsets.all(6.0),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8.0),
                                 image: DecorationImage(
@@ -165,7 +166,7 @@ class _IndexPageState extends State<IndexPage> {
                             ),
 
                             Container(
-                              margin: EdgeInsets.all(6.0),
+                              padding: EdgeInsets.all(6.0),
                               decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(8.0),
                                 image: DecorationImage(
@@ -185,64 +186,68 @@ class _IndexPageState extends State<IndexPage> {
                         viewportFraction: 0.8,
 
                       )),
+                    ),
 
-                      Container(
+                    Container(
 
-                        child: Column(
-                          children: <Widget>[
-                            Container(
-                              height: size.height/12,
+                      child: Column(
+                        children: <Widget>[
+                          Container(
+                            height: size.height*.09,
 
-                              decoration: BoxDecoration(
+                            decoration: BoxDecoration(
 
-                                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30),bottomRight: Radius.circular(30)),
-                                  color: Color(0xffb0e5ef)
-                              ),
-
-                              child: Align(
-                                alignment: Alignment.topCenter,
-                                child: Padding(
-                                  padding: const EdgeInsets.only(top: 12.0),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                                    children: <Widget>[
-
-                                      Stack(
-                                        children: <Widget>[
-                                          Text(
-                                            'INDEX',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                              fontSize: size.width * .1,
-                                              fontWeight: FontWeight.w800,
-                                              foreground: Paint()
-                                                ..style = PaintingStyle.stroke
-                                                ..strokeWidth = 6
-                                                ..color = Colors.white,
-                                            ),
-                                          ),
-                                          Text(
-                                            'INDEX',
-                                            textAlign: TextAlign.center,
-                                            style: TextStyle(
-                                                fontSize: size.width * .1,
-                                                fontWeight: FontWeight.w800,
-                                                color: Colors.black),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ),
-
+                                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(30),bottomRight: Radius.circular(30)),
+                                color: Color(0xffb0e5ef)
                             ),
 
-                            SizedBox(height: 7,),
-                            Padding(
-                              padding: const EdgeInsets.all(8.0),
-                              child: Container(
-                                child: Column(
+                            child: Align(
+                              alignment: Alignment.topCenter,
+                              child: Padding(
+                                padding: const EdgeInsets.only(top: 12.0),
+                                child: Row(
+                                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                                  children: <Widget>[
+
+                                    Stack(
+                                      children: <Widget>[
+                                        Text(
+                                          'INDEX',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                            fontSize: size.width * .1,
+                                            fontWeight: FontWeight.w800,
+                                            foreground: Paint()
+                                              ..style = PaintingStyle.stroke
+                                              ..strokeWidth = 6
+                                              ..color = Colors.white,
+                                          ),
+                                        ),
+                                        Text(
+                                          'INDEX',
+                                          textAlign: TextAlign.center,
+                                          style: TextStyle(
+                                              fontSize: size.width * .1,
+                                              fontWeight: FontWeight.w800,
+                                              color: Colors.black),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+
+                          ),
+
+                          SizedBox(height: size.height*.001,),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Container(
+                              height: size.height*.52,
+                              child: SingleChildScrollView(
+                                  scrollDirection: Axis.vertical
+                                ,child: Column(
                                   children: <Widget>[
                                     Container(
 
@@ -283,7 +288,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => FilmProducer()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -298,7 +303,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => FilmDirector()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -313,7 +318,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => FilmArtisht()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -328,7 +333,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => StoryWriter()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -343,7 +348,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => Cenematographar()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -358,7 +363,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ArtDirector()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -373,7 +378,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => FightDirector()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -388,7 +393,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => danceDirector()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -403,7 +408,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => AssistantDirector()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -418,7 +423,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ManagementInfo()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -433,7 +438,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => BACCPRO()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -448,7 +453,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => TelephoneNumberList()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -463,7 +468,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => CenemaHall()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -1682,13 +1687,13 @@ class _IndexPageState extends State<IndexPage> {
                                 ),
                               ),
                             ),
+                          ),
 
-                          ],
-                        ),
+                        ],
                       ),
+                    ),
 
-                    ],
-                  ),
+                  ],
                 ),
               ),
             ),
@@ -1697,7 +1702,7 @@ class _IndexPageState extends State<IndexPage> {
           ],
         ),
                 bottomNavigationBar: Container(
-                  height: 80,
+                  height: size.height*.08,
 
                   child:  CarouselSlider(
                       items: [

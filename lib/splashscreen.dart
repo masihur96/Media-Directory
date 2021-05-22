@@ -139,7 +139,7 @@ class _SplashScreenState extends State<SplashScreen> {
               ),
           );
         }
-    else {
+            else {
           // Loading is done, return the app:
           return  MaterialApp(
             debugShowCheckedModeBanner: false,
