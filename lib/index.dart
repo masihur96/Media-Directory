@@ -268,7 +268,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => FilmInstitution()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -283,7 +283,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => FilmProducer()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -298,7 +298,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => FilmDirector()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -313,7 +313,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => FilmArtisht()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -328,7 +328,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => StoryWriter()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -343,7 +343,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => Cenematographar()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -358,7 +358,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => ArtDirector()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -373,7 +373,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => FightDirector()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -388,7 +388,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => danceDirector()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -403,7 +403,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => AssistantDirector()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -418,7 +418,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => ManagementInfo()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -433,7 +433,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => BACCPRO()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -448,7 +448,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => TelephoneNumberList()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -463,7 +463,7 @@ class _IndexPageState extends State<IndexPage> {
                                                     onTap: () {
                                                       Navigator.of(context).push(MaterialPageRoute(
 
-                                                          builder: (context) => ListDataItem()),
+                                                          builder: (context) => CenemaHall()),
                                                       );
                                                     },
                                                     child: Hero(
@@ -1673,7 +1673,7 @@ class _IndexPageState extends State<IndexPage> {
                                                   builder: (context) => ListDataItem()),
                                               );
                                             },
-                                          child: Icon(Icons.arrow_forward_ios_outlined)),
+                                          child: Icon(Icons.arrow_forward_ios_outlined,size: 15),),
 
 
                                       ),
