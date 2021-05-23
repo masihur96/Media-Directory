@@ -72,362 +72,377 @@ class _ListDataItemState extends State<ListDataItem> {
     return SafeArea(
       child: Scaffold(
         backgroundColor: Color(0xffaad4e3),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: <Widget>[
-            Container(
-              height: size.height,
-              width: size.width * .4,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Container(
-                    height: size.height*.1,
-                    width: size.width*.2,
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Expanded(
+                flex: 2,
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    height: size.height,
 
-                     child: Image.asset(
-                      "images/atnbanglalogo.png",
-                    ),
-                  ),
-                  Stack(
-                    children: <Widget>[
-                      Text(
-                        'WIZARD',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.shadowsIntoLightTwo(
-                          fontSize: size.width * .06,
-                          fontWeight: FontWeight.w500,
-                          fontStyle: FontStyle.italic,
-                          foreground: Paint()
-                            ..style = PaintingStyle.stroke
-                            ..strokeWidth = 4
-                            ..color = Colors.white,
-                        ),
-                      ),
-                      Text(
-                        'WIZARD',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.shadowsIntoLightTwo(
-                            fontSize: size.width * .06,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.black,
-                            fontStyle: FontStyle.italic),
-                      ),
-                    ],
-                  ),
-                  Stack(
-                    children: <Widget>[
-                      Text(
-                        'Media\nDirectory 2021',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontSize: size.width * .06,
-                          fontWeight: FontWeight.w800,
-                          foreground: Paint()
-                            ..style = PaintingStyle.stroke
-                            ..strokeWidth = 4
-                            ..color = Colors.white,
-                        ),
-                      ),
-                      Text(
-                        'Media\nDirectory 2021',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                            fontSize: size.width * .06,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.black),
-                      ),
-                    ],
-                  ),
-                  Text(
-                    'ATN Bangla Wizard Media Directory 2021',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                        fontSize: size.width * .02,
-                        fontWeight: FontWeight.w800),
-                  ),
-                  Text(
-                    "২০ তম প্রকাশনা",
-                    style: TextStyle(
-                        fontSize: size.width * .05,
-                        fontWeight: FontWeight.w800,
-                        color: Colors.red),
-                  ),
-                  Text(
-                    "CELEBRATING",
-                    style: TextStyle(
-                        fontSize: size.width * .06,
-                        fontWeight: FontWeight.w800,
-                        color: Colors.black),
-                  ),
-                  Container(
-                    height: size.height*.1,
-                    width: size.width*.2,
-                    child: Image.asset(
-                      "images/selebrationyear.png",
-
-                    ),
-                  ),
-                  Text(
-                    "BEHIND THE SCREEN",
-                    style: TextStyle(
-                        fontSize: size.width * .04,
-                        fontWeight: FontWeight.w800,
-                        color: Colors.red),
-                  ),
-                  Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: <Widget>[
-                      Text(
-                        "Adviser",
-                        style: TextStyle(
-                            fontSize: size.width * .04,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white),
-                      ),
-                      Text(
-                        "M.N.Ispahani",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Md.Shafi Uddin",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Editor",
-                        style: TextStyle(
-                            fontSize: size.width * .04,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white),
-                      ),
-                      Text(
-                        "Sharif Jahan",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Assistant Editor",
-                        style: TextStyle(
-                            fontSize: size.width * .04,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white),
-                      ),
-                      Text(
-                        "Masuma Ferdows Lina",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Marketing Officer",
-                        style: TextStyle(
-                            fontSize: size.width * .04,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white),
-                      ),
-                      Text(
-                        "Sojan Chandra Das",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Mehedi Hasan Sohel",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Graphics Design",
-                        style: TextStyle(
-                            fontSize: size.width * .04,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white),
-                      ),
-                      Text(
-                        "Shubash Chandra Mallick",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Md.Harun Ur Rushid",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Data Processing",
-                        style: TextStyle(
-                            fontSize: size.width * .04,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white),
-                      ),
-                      Text(
-                        "Md.Nasir Uddin",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Office Assistant",
-                        style: TextStyle(
-                            fontSize: size.width * .04,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white),
-                      ),
-                      Text(
-                        "Al Amin",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Special Thanks",
-                        style: TextStyle(
-                            fontSize: size.width * .04,
-                            fontWeight: FontWeight.w800,
-                            color: Colors.white),
-                      ),
-                      Text(
-                        "Firoz Khan, Sumit Nazrul",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                      Text(
-                        "Sheikh Amanur, A B D Tuhin",
-                        style: TextStyle(
-                            fontSize: size.width * .03, color: Colors.black),
-                      ),
-                    ],
-                  ),
-
-                  SizedBox(height: size.height*.03,),
-
-                  Text(
-                    "Published by",
-                    style: TextStyle(
-                        fontSize: size.width * .04,
-                        decoration: TextDecoration.underline,
-                        color: Colors.black),
-                  ),
-                  Text(
-                    'WIZARD',
-                    textAlign: TextAlign.center,
-                    style: GoogleFonts.shadowsIntoLightTwo(
-                        fontSize: size.width * .06,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                        fontStyle: FontStyle.italic),
-                  ),
-                  Text(
-                    "BUSINESS COMMUNICATION",
-                    style: TextStyle(
-                        fontSize: size.width * .03, color: Colors.black,fontWeight: FontWeight.bold),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 4.0),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.center,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
                       children: <Widget>[
                         Container(
-                            height: size.height*.09,
-                            width: size.width*.08,
-                            child: Image.asset("images/lo.jpg",)
+                          height: size.height*.1,
+                          width: size.width*.2,
+
+                           child: Image.asset(
+                            "images/atnbanglalogo.png",
+                          ),
                         ),
-                        SizedBox(
-                          width: size.width * .01,
+                        Stack(
+                          children: <Widget>[
+                            Text(
+                              'WIZARD',
+                              textAlign: TextAlign.center,
+                              style: GoogleFonts.shadowsIntoLightTwo(
+                                fontSize: size.width * .03,
+                                fontWeight: FontWeight.w500,
+                                fontStyle: FontStyle.italic,
+                                foreground: Paint()
+                                  ..style = PaintingStyle.stroke
+                                  ..strokeWidth = 4
+                                  ..color = Colors.white,
+                              ),
+                            ),
+                            Text(
+                              'WIZARD',
+                              textAlign: TextAlign.center,
+                              style: GoogleFonts.shadowsIntoLightTwo(
+                                  fontSize: size.width * .03,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.black,
+                                  fontStyle: FontStyle.italic),
+                            ),
+                          ],
+                        ),
+                        Stack(
+                          children: <Widget>[
+                            Text(
+                              'Media\nDirectory 2021',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: size.width * .04,
+                                fontWeight: FontWeight.w800,
+                                foreground: Paint()
+                                  ..style = PaintingStyle.stroke
+                                  ..strokeWidth = 4
+                                  ..color = Colors.white,
+                              ),
+                            ),
+                            Text(
+                              'Media\nDirectory 2021',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  fontSize: size.width * .04,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.black),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          'ATN Bangla Wizard Media Directory 2021',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              fontSize: size.width * .02,
+                              fontWeight: FontWeight.w800),
+                        ),
+                        Text(
+                          "২০ তম প্রকাশনা",
+                          style: TextStyle(
+                              fontSize: size.width * .04,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.red),
+                        ),
+                        Text(
+                          "CELEBRATING",
+                          style: TextStyle(
+                              fontSize: size.width * .05,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.black),
                         ),
                         Container(
-                          height: size.height * .09,
-                          width: size.width * .2,
-                          child: Text(
-                            "Rezzak Plaza,Level #9, Suite # 10-A 383 Boro Moghbazar,Dhaka,Bangladesh .Phone:02-58317938,01713-084358 E-mail: wizardmediadirectory@gmail.com", textAlign: TextAlign.justify,
-                          style: TextStyle(fontSize: size.width*.02),),
+                          height: size.height*.1,
+                          width: size.width*.2,
+                          child: Image.asset(
+                            "images/selebrationyear.png",
+
+                          ),
+                        ),
+                        Text(
+                          "BEHIND THE SCREEN",
+                          style: TextStyle(
+                              fontSize: size.width * .04,
+                              fontWeight: FontWeight.w800,
+                              color: Colors.red),
+                        ),
+                        Column(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text(
+                              "Adviser",
+                              style: TextStyle(
+                                  fontSize: size.width * .04,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              "M.N.Ispahani",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Md.Shafi Uddin",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Editor",
+                              style: TextStyle(
+                                  fontSize: size.width * .04,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              "Sharif Jahan",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Assistant Editor",
+                              style: TextStyle(
+                                  fontSize: size.width * .04,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              "Masuma Ferdows Lina",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Marketing Officer",
+                              style: TextStyle(
+                                  fontSize: size.width * .04,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              "Sojan Chandra Das",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Mehedi Hasan Sohel",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Graphics Design",
+                              style: TextStyle(
+                                  fontSize: size.width * .04,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              "Shubash Chandra Mallick",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Md.Harun Ur Rushid",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Data Processing",
+                              style: TextStyle(
+                                  fontSize: size.width * .04,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              "Md.Nasir Uddin",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Office Assistant",
+                              style: TextStyle(
+                                  fontSize: size.width * .04,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              "Al Amin",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Special Thanks",
+                              style: TextStyle(
+                                  fontSize: size.width * .04,
+                                  fontWeight: FontWeight.w800,
+                                  color: Colors.white),
+                            ),
+                            Text(
+                              "Firoz Khan, Sumit Nazrul",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                            Text(
+                              "Sheikh Amanur, A B D Tuhin",
+                              style: TextStyle(
+                                  fontSize: size.width * .03, color: Colors.black),
+                            ),
+                          ],
+                        ),
+
+                        // SizedBox(height: size.height*.03,),
+
+                        Text(
+                          "Published by",
+                          style: TextStyle(
+                              fontSize: size.width * .04,
+                              decoration: TextDecoration.underline,
+                              color: Colors.black),
+                        ),
+                        Text(
+                          'WIZARD',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.shadowsIntoLightTwo(
+                              fontSize: size.width * .06,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.black,
+                              fontStyle: FontStyle.italic),
+                        ),
+                        Text(
+                          "BUSINESS COMMUNICATION",
+                          style: TextStyle(
+                              fontSize: size.width * .03, color: Colors.black,fontWeight: FontWeight.bold),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 4.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Container(
+                                  height: size.height*.09,
+                                  width: size.width*.08,
+                                  child: Image.asset("images/lo.jpg",)
+                              ),
+                              SizedBox(
+                                width: size.width * .01,
+                              ),
+                              Container(
+                                height: size.height * .09,
+                                width: size.width * .2,
+                                child: Text(
+                                  "Rezzak Plaza,Level #9, Suite # 10-A 383 Boro Moghbazar,Dhaka,Bangladesh .Phone:02-58317938,01713-084358 E-mail: wizardmediadirectory@gmail.com", textAlign: TextAlign.justify,
+                                style: TextStyle(fontSize: size.width*.02),),
+                              )
+                            ],
+                          ),
                         )
                       ],
                     ),
-                  )
-                ],
+                  ),
+                ),
               ),
-            ),
-            Container(
-              height: size.height,
-              width: size.width * .6,
-              color: Colors.white60,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: <Widget>[
-
-                  Container(
-                      height: size.height/6,
-                      width: size.width*.4,
-                      child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                       Column(
-                         crossAxisAlignment: CrossAxisAlignment.end,
-                         mainAxisAlignment: MainAxisAlignment.end,
-                         children: <Widget>[
-                           Text(" Editors View",style: TextStyle(fontSize: size.width*.03,color: Colors.red,fontWeight: FontWeight.bold),),
-                           Container(
-                             color: Colors.red,
-                             height: 1,
-                             width: size.width*.15,
-                           ),
-
-
-                         ],
-                       ),
+              Expanded(
+                flex:4,
+                child: Container(
+                  height: size.height,
+                  width: size.width * .6,
+                  color: Colors.white60,
+                  child: SingleChildScrollView(
+                    scrollDirection: Axis.vertical,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
 
                         Container(
                             height: size.height/6,
-                            width: size.width*.24,
-                            child: Image.asset("images/people.png")
+                            width: size.width*.4,
+                            child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                             Column(
+                               crossAxisAlignment: CrossAxisAlignment.end,
+                               mainAxisAlignment: MainAxisAlignment.end,
+                               children: <Widget>[
+                                 Text(" Editors View",style: TextStyle(fontSize: size.width*.03,color: Colors.red,fontWeight: FontWeight.bold),),
+                                 Container(
+                                   color: Colors.red,
+                                   height: 1,
+                                   width: size.width*.15,
+                                 ),
+
+
+                               ],
+                             ),
+
+                              Container(
+                                  height: size.height/6,
+                                  width: size.width*.24,
+                                  child: Image.asset("images/people.png")
+                              ),
+
+
+
+                            ],
+
+
+                          ),
                         ),
 
+                        Padding(
+                          padding: const EdgeInsets.only(top:10.0),
+                          child: Container(
+                              height: size.height*.4,
+                              width: size.width*.3,
+                              child: Text("Communication plays a vital role in global trade and commerce. Current and up to date information is vital for successful communication to cater the need of audio, audiovisual and film industries of Bangladesh. Wizard Business Communication has been publishing Wizard Media Directory as it has been our goal to provide the concerned business with necessary and latest information."
+                                  '\n\n'
+                                  'We are constantly aware of providing current business information which leads to wide acceptance of the directory.'
+                                  '\n\n'
+                                  'We are grateful to see the huge interest and enthusiasm among the industry colleagues at home and abroad.'
+                                  'We would like to thank all of our well wishers, patrons and colleagues for their appreciation, interests and cooperation; without which our endeavors would be an empty shell. We hope our efforts will meet your expectations'
+                                  '\n\n'
+                                  'With best wishes,',textAlign: TextAlign.justify,
+                              ),
+                          ),
+                        ),
+
+                        SizedBox(height: size.height*.05,),
+                        Column(
+                          children: <Widget>[
+                            Image.asset("images/editorsign.png"),
+                            Text("(Sharif Jahan)",style: TextStyle(fontWeight: FontWeight.bold),),
+                            Text("Editor"),
+                            Text("(Wizard Media Directory)",style: TextStyle(fontWeight: FontWeight.bold),),
+                            Text("Managing Director"),
+                            Text("(Wizard Business Communication)",style: TextStyle(fontWeight: FontWeight.bold),),
+
+
+
+                          ],
+                        ),
 
 
                       ],
-
-
                     ),
                   ),
-
-                  Padding(
-                    padding: const EdgeInsets.only(top:10.0),
-                    child: Container(
-                        height: size.height*.5,
-                        width: size.width*.4,
-                        child: Text("Communication plays a vital role in global trade and commerce. Current and up to date information is vital for successful communication to cater the need of audio, audiovisual and film industries of Bangladesh. Wizard Business Communication has been publishing Wizard Media Directory as it has been our goal to provide the concerned business with necessary and latest information."
-                            '\n\n'
-                            'We are constantly aware of providing current business information which leads to wide acceptance of the directory.'
-                            '\n\n'
-                            'We are grateful to see the huge interest and enthusiasm among the industry colleagues at home and abroad.'
-                            'We would like to thank all of our well wishers, patrons and colleagues for their appreciation, interests and cooperation; without which our endeavors would be an empty shell. We hope our efforts will meet your expectations'
-                            '\n\n'
-                            'With best wishes,',textAlign: TextAlign.justify,
-                        ),
-                    ),
-                  ),
-
-                  SizedBox(height: size.height*.05,),
-                  Column(
-                    children: <Widget>[
-                      Image.asset("images/editorsign.png"),
-                      Text("(Sharif Jahan)",style: TextStyle(fontWeight: FontWeight.bold),),
-                      Text("Editor"),
-                      Text("(Wizard Media Directory)",style: TextStyle(fontWeight: FontWeight.bold),),
-                      Text("Managing Director"),
-                      Text("(Wizard Business Communication)",style: TextStyle(fontWeight: FontWeight.bold),),
-
-
-
-                    ],
-                  ),
-
-
-                ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );

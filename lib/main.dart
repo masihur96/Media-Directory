@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:mediaquery/splashscreen.dart';
 import 'package:device_preview/device_preview.dart';
 
-void main() => runApp( MyApp(), // Wrap your app
-);
+void main() => runApp(DevicePreview(
+enabled: !kReleaseMode,
+builder: (context) => MyApp(),));
 
 class MyApp extends StatelessWidget {
   @override
